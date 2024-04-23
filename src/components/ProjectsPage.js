@@ -1,7 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaChrome } from 'react-icons/fa'; // Import Font Awesome icons
-
+// Import all project images
+import screenshot66 from '../images/Screenshot (66).png';
+import screenshot137 from '../images/Screenshot (137).png';
+import screenshot75 from '../images/Screenshot (75).png';
+import screenshot116 from '../images/Screenshot (116).png';
+import screenshot138 from '../images/Screenshot (138).png';
+import screenshot139 from '../images/Screenshot (139).png';
+import screenshot140 from '../images/Screenshot (140).png';
+import screenshot141 from '../images/Screenshot (141).png';
+import screenshot142 from '../images/Screenshot (142).png';
+import screenshot145 from '../images/Screenshot (145).png';
+import screenshot146 from '../images/Screenshot (146).png';
+import screenshot147 from '../images/Screenshot (147).png';
+import screenshot148 from '../images/Screenshot (148).png';
+import screenshot150 from '../images/Screenshot (150).png';
+import screenshot151 from '../images/Screenshot (151).png';
+import screenshot152 from '../images/Screenshot (152).png';
 const projectData = [
   {
     category: "Websites",
@@ -9,28 +25,28 @@ const projectData = [
       {
         title: "Yahya's Departmental Store",
         description: "The first project of mine I ever made. It is a Departmental / Grocery store that uses simple HTML, CSS, and JS.",
-        imageUrl: "images/Screenshot (66).png",
+        imageUrl: screenshot66,
         githubUrl: "https://github.com/YahyaBinUsman/YahyaDepartmentalStore.github.io",
         liveUrl: "https://yahyabinusman.github.io/YahyaDepartmentalStore.github.io/index.html"
       },
       {
         title: "Pet Adoption Center",
         description: "Second website of mine. It is a frontend design for a pet adoption center, made in React.",
-        imageUrl: "images/Screenshot (137).png",
+        imageUrl: screenshot137,
         githubUrl: "https://github.com/YahyaBinUsman/pet-adoption-center.github.io",
         liveUrl: "https://yahyabinusman.github.io/pet-adoption-center.github.io/"
       },
       {
         title: "TechPro Gearhub",
         description: "The third project is an E-commerce platform that is fully functional and has both frontend and backend with a database. Made in Django.",
-        imageUrl: "images/Screenshot (75).png",
+        imageUrl: screenshot75,
         githubUrl: "https://github.com/YahyaBinUsman/Techpro-Gearhub.github.io",
         liveUrl: "https://yahyabinusman.github.io/Techpro-Gearhub.github.io/"
       },
       {
         title: "Employee Management System",
         description: "The fourth project is an employee management system that is fully functional and has both frontend and backend with a database. Made in Django.",
-        imageUrl: "images/Screenshot (116).png",
+        imageUrl: screenshot116,
         githubUrl: "https://github.com/YahyaBinUsman/Techpro-Gearhub.github.io",
         liveUrl: "https://yahyabinusman.github.io/Techpro-Gearhub.github.io/"
       }
@@ -42,61 +58,61 @@ const projectData = [
       {
         title: "Tic Tac Toe",
         description: "Tic Tac Toe game with a graphical user interface, made in Python with the tkinter library.",
-        imageUrl: "images/Screenshot (138).png",
+        imageUrl: screenshot138,
         githubUrl: "https://github.com/YahyaBinUsman/tic-tac-toe"
       },
       {
         title: "Rock Paper Scissors",
         description: "Rock Paper Scissors game played against the computer. Very simple and fun.",
-        imageUrl: "images/Screenshot (139).png",
+        imageUrl: screenshot139,
         githubUrl: "https://github.com/YahyaBinUsman/rock-paper-scissors"
       },
       {
         title: "Quiz Game",
         description: "A quiz game that asks a question and then gives 4 options. The user selects an option, and it checks if it's correct, giving points accordingly.",
-        imageUrl: "images/Screenshot (140).png",
+        imageUrl: screenshot140,
         githubUrl: "https://github.com/YahyaBinUsman/quiz-game"
       },
       {
         title: "Password Generator",
         description: "Password generator that creates passwords based on the entered difficulty. Made in Python.",
-        imageUrl: "images/Screenshot (141).png",
+        imageUrl: screenshot141,
         githubUrl: "https://github.com/YahyaBinUsman/password-generator"
       },
       {
         title: "Fighting Warrior Game",
         description: "Asks for a weapon first, then 3 enemies appear, and it fights them by asking for an attack or giving up. No GUI.",
-        imageUrl: "images/Screenshot (142).png",
+        imageUrl: screenshot142,
         githubUrl: "https://github.com/YahyaBinUsman/fun-games"
       },
       {
         title: "Face Recognition",
         description: "A face recognition program that can detect faces in front of the camera smoothly. Made in Python.",
-        imageUrl: "images/Screenshot (145).png",
+        imageUrl: screenshot145,
         githubUrl: "https://github.com/YahyaBinUsman/face-recognition"
       },
       {
         title: "Expense Splitter",
         description: "A program that takes all friends' names as input and divides the bill among them equally. Made in Python.",
-        imageUrl: "images/Screenshot (146).png",
+        imageUrl: screenshot146,
         githubUrl: "https://github.com/YahyaBinUsman/expense_splitter"
       },
       {
         title: "Chat Bot",
         description: "By placing your API key of OpenAI, you can talk by voice with this program. It listens and uses Chat-GPT for results.",
-        imageUrl: "images/Screenshot (147).png",
+        imageUrl: screenshot147,
         githubUrl: "https://github.com/YahyaBinUsman/chat-bot"
       },
       {
         title: "GUI Calculator",
         description: "A working calculator in Python that uses GUI using tkinter library and is very effective.",
-        imageUrl: "images/Screenshot (148).png",
+        imageUrl: screenshot148,
         githubUrl: "https://github.com/YahyaBinUsman/GUI-calculator"
       },
       {
         title: "Alarm Clock",
         description: "A working alarm clock in Python that you can set time in 24-hour format, and it will beep on the desired time.",
-        imageUrl: "images/Screenshot (150).png",
+        imageUrl: screenshot150,
         githubUrl: "https://github.com/YahyaBinUsman/alarm-clock"
       }
     ]
@@ -107,13 +123,13 @@ const projectData = [
       {
         title: "Currency Rates Converter",
         description: "This project converts currencies like 'USD', 'EUR', 'GBP', 'AUD', 'PKR', 'INR'.",
-        imageUrl: "images/Screenshot (152).png",
+        imageUrl: screenshot152,
         githubUrl: "https://github.com/YahyaBinUsman/currency-converter.github.io", // Update with actual URL
       },
       {
         title: "Weather App",
         description: "This project retrieves the current weather for any city using the OpenWeatherMap API.",
-        imageUrl: "images/Screenshot (151).png",
+        imageUrl: screenshot151,
         githubUrl: "https://github.com/YahyaBinUsman/weather-app.github.io"
       }
       // Add additional JavaScript projects here following the same format

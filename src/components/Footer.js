@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faFacebook, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons';
-import { faTimes as faClose } from '@fortawesome/free-solid-svg-icons'; // Rename faTimes as faClose
 
 const Footer = () => {
   return (

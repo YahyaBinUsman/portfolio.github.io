@@ -1,4 +1,5 @@
 import React from 'react';
+import yahyaImage from '../images/yahya.jpg';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const HomePage = () => {
@@ -11,7 +12,7 @@ const HomePage = () => {
       <div className="relative flex flex-col items-center justify-center mt-[-50px]">
         <div className="w-52 h-52 rounded-full overflow-hidden border-8 border-futuristic-gold mb-6 flex-shrink-0">
           <motion.img
-            src="/images/yahya.jpg"
+            src={yahyaImage}
             alt="Profile"
             className="w-full h-full object-cover"
             initial={{ opacity: 0, scale: 0.8 }}

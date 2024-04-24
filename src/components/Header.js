@@ -17,6 +17,10 @@ const StyledLink = styled(Link)`
     height: 2px; /* Adjust this value to change the thickness of the underline */
     background-color: #ffd700; /* Gold color */
   }
+
+  &:hover {
+    color: #ffd700; /* Gold color */
+  }
 `;
 
 const Header = () => {
@@ -43,6 +47,7 @@ const Header = () => {
             <motion.button 
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsOpen(!isOpen)}
+              style={{ border: '2px solid #ffd700' }} /* Always gold border */
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />

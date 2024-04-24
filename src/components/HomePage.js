@@ -20,11 +20,6 @@ const HomePage = () => {
             transition={{ duration: 1 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.5}
-            dragMomentum={false}
-            dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
             exit={{ opacity: 0 }}
           />
         </div>
@@ -58,11 +53,6 @@ const HomePage = () => {
             className="p-8 rounded-lg bg-futuristic-purple border-4 border-futuristic-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.5}
-            dragMomentum={false}
-            dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
           >
             <h2 className="text-3xl font-bold mb-4">Luxurious Creations</h2>
             <p className="text-lg">Indulge in our opulent collection of bespoke creations meticulously crafted to elevate your lifestyle.</p>
@@ -78,11 +68,6 @@ const HomePage = () => {
             className="p-8 rounded-lg bg-futuristic-purple border-4 border-futuristic-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.5}
-            dragMomentum={false}
-            dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
           >
             <h2 className="text-3xl font-bold mb-4">Quantum Innovations</h2>
             <p className="text-lg">Experience breakthroughs at the forefront of technology, where science fiction meets reality.</p>
@@ -98,11 +83,6 @@ const HomePage = () => {
             className="p-8 rounded-lg bg-futuristic-purple border-4 border-futuristic-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.5}
-            dragMomentum={false}
-            dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
           >
             <h2 className="text-3xl font-bold mb-4">Cosmic Exploration</h2>
             <p className="text-lg">Embark on an interstellar journey to uncover the mysteries of the universe, with our cutting-edge space exploration technologies.</p>
@@ -118,11 +98,6 @@ const HomePage = () => {
             className="p-8 rounded-lg bg-futuristic-purple border-4 border-futuristic-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.5}
-            dragMomentum={false}
-            dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
           >
             <h2 className="text-3xl font-bold mb-4">Cybernetic Wonders</h2>
             <p className="text-lg">Immerse yourself in a world of cybernetic marvels, where human and machine merge to redefine possibilities.</p>
@@ -138,11 +113,6 @@ const HomePage = () => {
             className="p-8 rounded-lg bg-futuristic-purple border-4 border-futuristic-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.5}
-            dragMomentum={false}
-            dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
           >
             <h2 className="text-3xl font-bold mb-4">Virtual Utopia</h2>
             <p className="text-lg">Step into our virtual realm, where dreams manifest into reality, and explore boundless realms of imagination.</p>
@@ -157,11 +127,6 @@ const HomePage = () => {
             className="p-8 rounded-lg bg-futuristic-purple border-4 border-futuristic-gold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-            dragElastic={0.5}
-            dragMomentum={false}
-            dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
           >
             <h2 className="text-3xl font-bold mb-4">Future Trends</h2>
             <p className="text-lg">Stay ahead of the curve with our insights into future trends shaping industries and societies.</p>
@@ -171,4 +136,5 @@ const HomePage = () => {
     </div>
   );
 };
+
 export default HomePage;

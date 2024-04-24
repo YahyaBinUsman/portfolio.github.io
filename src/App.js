@@ -1,4 +1,5 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
@@ -19,6 +20,8 @@ function App() {
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/experience" element={<ExperiencePage />} />
+            {/* Add a catch-all route to redirect to the homepage */}
+            <Route path="/*" element={<HomePage />} />
           </Routes>
         </main>
         <Footer />

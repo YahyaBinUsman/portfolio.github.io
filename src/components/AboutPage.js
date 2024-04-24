@@ -51,12 +51,10 @@ const AboutPage = () => {
             whileTap={{ scale: 0.95 }}
           >
             <h3 className="text-3xl font-bold mb-3">What I Offer</h3>
-            <ul className="list-disc pl-5">
-              <li>Revolutionary full-stack Python development</li>
-              <li>Dynamic web applications with React</li>
-              <li>Powerful back-end systems with Django</li>
-              <li>Sleek interfaces with Bootstrap and Tailwind</li>
-            </ul>
+              <p>Revolutionary full-stack Python development</p>
+              <p>Dynamic web applications with React</p>
+              <p>Powerful back-end systems with Django</p>
+              <p>Sleek interfaces with Bootstrap and Tailwind</p>
           </motion.section>
 
           <motion.section

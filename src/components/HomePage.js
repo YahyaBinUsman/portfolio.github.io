@@ -133,7 +133,11 @@ const HomePage = () => {
           </motion.div>
         </AnimatePresence>
       </div>
+      <br/>
+      <br/>
+      <br/>
     </div>
+
   );
 };
 

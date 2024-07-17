@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaChrome } from 'react-icons/fa'; // Import Font Awesome icons
 // Import all project images
 import screenshot66 from '../images/Screenshot (66).png';
 import screenshot137 from '../images/Screenshot (137).png';
@@ -18,6 +17,17 @@ import screenshot148 from '../images/Screenshot (148).png';
 import screenshot150 from '../images/Screenshot (150).png';
 import screenshot151 from '../images/Screenshot (151).png';
 import screenshot152 from '../images/Screenshot (152).png';
+import screenshot153 from '../images/Screenshot (153).png';
+import screenshot160 from '../images/Screenshot (160).png';
+import screenshot71 from '../images/Screenshot (71).png';
+import screenshot72 from '../images/Screenshot (72).png';
+import screenshot73 from '../images/Screenshot (73).png';
+import screenshot74 from '../images/Screenshot (74).png';
+import screenshot76 from '../images/Screenshot (76).png';
+
+
+
+
 const projectData = [
   {
     category: "Websites",
@@ -26,30 +36,58 @@ const projectData = [
         title: "Yahya's Departmental Store",
         description: "The first project of mine I ever made. It is a Departmental / Grocery store that uses simple HTML, CSS, and JS.",
         imageUrl: screenshot66,
-        githubUrl: "https://github.com/YahyaBinUsman/YahyaDepartmentalStore.github.io",
-        liveUrl: "https://yahyabinusman.github.io/YahyaDepartmentalStore.github.io/index.html"
       },
       {
         title: "Pet Adoption Center",
         description: "Second website of mine. It is a frontend design for a pet adoption center, made in React.",
         imageUrl: screenshot137,
-        githubUrl: "https://github.com/YahyaBinUsman/pet-adoption-center.github.io",
-        liveUrl: "https://yahyabinusman.github.io/pet-adoption-center.github.io/"
       },
       {
         title: "TechPro Gearhub",
         description: "The third project is an E-commerce platform that is fully functional and has both frontend and backend with a database. Made in Django.",
         imageUrl: screenshot75,
-        githubUrl: "https://github.com/YahyaBinUsman/Techpro-Gearhub.github.io",
-        liveUrl: "https://yahyabinusman.github.io/Techpro-Gearhub.github.io/"
       },
       {
         title: "Employee Management System",
         description: "The fourth project is an employee management system that is fully functional and has both frontend and backend with a database. Made in Django.",
         imageUrl: screenshot116,
-        githubUrl: "https://github.com/YahyaBinUsman/Techpro-Gearhub.github.io",
-        liveUrl: "https://yahyabinusman.github.io/Techpro-Gearhub.github.io/"
-      }
+      },
+      {
+        title: "Blog Generating website",
+        description: "It is a blog generating website that uses chatGPT api key to generate blogs and has a subscription system and all other functionalities. Made in Django.",
+        imageUrl: screenshot153,
+      },
+      {
+        title: "Chat App system",
+        description: "Chat app sysem that is complete functional and works real time and can help you chat with your friends and add them as friends. Made in Django.",
+        imageUrl: screenshot160,
+      },
+      {
+        title: "Employee management system 2",
+        description: "The fourth project is an employee management system that is fully functional and has both frontend and backend with a database. Made in Django.",
+        imageUrl: screenshot71,
+      },
+      {
+        title: "Equipment reservation for users",
+        description: "It is a equipment reservation system in we reserrve equipment for some time period and then after time ends the equipment is sended back. Made in Django.",
+        imageUrl: screenshot72,
+      },
+      {
+        title: "Job Portal",
+        description: "A perfect professioanl advanced job portal with all the things included like job fidners , employers and jobs and everything imaginable. Made in Django.",
+        imageUrl: screenshot73,
+      },
+      {
+        title: "Samsung E-commerce store",
+        description: "A perfect professioanl advanced e commerce website of samsung store and selling samsung products and a sleek design . Made in HTML , CSS.",
+        imageUrl: screenshot74,
+      },
+      {
+        title: "Billing system",
+        description: " A billing system that is used to add product data , a barcode scanner that is used to scan barcodes and then used for billing. Made in Django.",
+        imageUrl: screenshot76,
+      },
+      
     ]
   },
   {
@@ -59,61 +97,51 @@ const projectData = [
         title: "Tic Tac Toe",
         description: "Tic Tac Toe game with a graphical user interface, made in Python with the tkinter library.",
         imageUrl: screenshot138,
-        githubUrl: "https://github.com/YahyaBinUsman/tic-tac-toe"
       },
       {
         title: "Rock Paper Scissors",
         description: "Rock Paper Scissors game played against the computer. Very simple and fun.",
         imageUrl: screenshot139,
-        githubUrl: "https://github.com/YahyaBinUsman/rock-paper-scissors"
       },
       {
         title: "Quiz Game",
         description: "A quiz game that asks a question and then gives 4 options. The user selects an option, and it checks if it's correct, giving points accordingly.",
         imageUrl: screenshot140,
-        githubUrl: "https://github.com/YahyaBinUsman/quiz-game"
       },
       {
         title: "Password Generator",
         description: "Password generator that creates passwords based on the entered difficulty. Made in Python.",
         imageUrl: screenshot141,
-        githubUrl: "https://github.com/YahyaBinUsman/password-generator"
       },
       {
         title: "Fighting Warrior Game",
         description: "Asks for a weapon first, then 3 enemies appear, and it fights them by asking for an attack or giving up. No GUI.",
         imageUrl: screenshot142,
-        githubUrl: "https://github.com/YahyaBinUsman/fun-games"
       },
       {
         title: "Face Recognition",
         description: "A face recognition program that can detect faces in front of the camera smoothly. Made in Python.",
         imageUrl: screenshot145,
-        githubUrl: "https://github.com/YahyaBinUsman/face-recognition"
       },
       {
         title: "Expense Splitter",
         description: "A program that takes all friends' names as input and divides the bill among them equally. Made in Python.",
         imageUrl: screenshot146,
-        githubUrl: "https://github.com/YahyaBinUsman/expense_splitter"
       },
       {
         title: "Chat Bot",
         description: "By placing your API key of OpenAI, you can talk by voice with this program. It listens and uses Chat-GPT for results.",
         imageUrl: screenshot147,
-        githubUrl: "https://github.com/YahyaBinUsman/chat-bot"
       },
       {
         title: "GUI Calculator",
         description: "A working calculator in Python that uses GUI using tkinter library and is very effective.",
         imageUrl: screenshot148,
-        githubUrl: "https://github.com/YahyaBinUsman/GUI-calculator"
       },
       {
         title: "Alarm Clock",
         description: "A working alarm clock in Python that you can set time in 24-hour format, and it will beep on the desired time.",
         imageUrl: screenshot150,
-        githubUrl: "https://github.com/YahyaBinUsman/alarm-clock"
       }
     ]
   },
@@ -124,13 +152,11 @@ const projectData = [
         title: "Currency Rates Converter",
         description: "This project converts currencies like 'USD', 'EUR', 'GBP', 'AUD', 'PKR', 'INR'.",
         imageUrl: screenshot152,
-        githubUrl: "https://github.com/YahyaBinUsman/currency-converter.github.io", // Update with actual URL
       },
       {
         title: "Weather App",
         description: "This project retrieves the current weather for any city using the OpenWeatherMap API.",
         imageUrl: screenshot151,
-        githubUrl: "https://github.com/YahyaBinUsman/weather-app.github.io"
       }
       // Add additional JavaScript projects here following the same format
     ]
@@ -161,14 +187,7 @@ const ProjectsPage = () => {
                   <img src={project.imageUrl} alt={project.title} className="mb-4 rounded-lg"/>
                   <p className="text-lg text-white">{project.description}</p>
                   <div className="flex justify-between mt-4">
-                    <a href={project.githubUrl} className="text-futuristic-gold hover:text-neon-blue transition-colors duration-300">
-                      <FaGithub size={24} />
-                    </a>
-                    {project.liveUrl && (
-                      <a href={project.liveUrl} className="text-futuristic-gold hover:text-neon-blue transition-colors duration-300">
-                        <FaChrome size={24} />
-                      </a>
-                    )}
+                    {/* GitHub Icon */}
                   </div>
                 </motion.div>
               ))}

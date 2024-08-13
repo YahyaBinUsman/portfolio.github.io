@@ -25,9 +25,6 @@ import screenshot73 from '../images/Screenshot (73).png';
 import screenshot74 from '../images/Screenshot (74).png';
 import screenshot76 from '../images/Screenshot (76).png';
 
-
-
-
 const projectData = [
   {
     category: "Websites",
@@ -165,37 +162,31 @@ const projectData = [
 
 const ProjectsPage = () => {
   return (
-    <>
-      <br/>
-      <br/>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black text-futuristic-gold">
       <div className="container mx-auto px-8 py-20">
         <h1 className="text-6xl font-bold text-center text-futuristic-gold mb-12">Projects</h1>
         {projectData.map((section, index) => (
-          <div key={index} className="mb-16"> {/* Add margin bottom to separate sections */}
+          <div key={index} className="mb-16">
             <h2 className="text-4xl font-bold text-futuristic-gold mb-8">{section.category}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {section.projects.map((project, idx) => (
                 <motion.div
                   key={idx}
-                  className="rounded-lg border-4 border-futuristic-gold shadow-xl p-8 transform hover:scale-105 transition-transform duration-300"
+                  className="rounded-lg border-4 border-futuristic-gold shadow-2xl p-8 transform hover:scale-105 transition-transform duration-500 bg-opacity-30 bg-black"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 * idx }}
-                  style={{ backgroundColor: 'transparent' }} // Set background color to transparent
                 >
                   <h3 className="text-2xl font-semibold mb-4 text-futuristic-gold">{project.title}</h3>
-                  <img src={project.imageUrl} alt={project.title} className="mb-4 rounded-lg"/>
+                  <img src={project.imageUrl} alt={project.title} className="mb-4 rounded-lg object-cover h-48 w-full" />
                   <p className="text-lg text-white">{project.description}</p>
-                  <div className="flex justify-between mt-4">
-                    {/* GitHub Icon */}
-                  </div>
                 </motion.div>
               ))}
             </div>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

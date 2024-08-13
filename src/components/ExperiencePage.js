@@ -1,179 +1,221 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPython,
+  faJsSquare,
+  faHtml5,
+  faCss3Alt,
+  faReact,
+  faNodeJs,
+  faGithub,
+  faWordpress,
+  faBootstrap,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faDatabase,
+  faServer,
+  faFileAlt,
+  faFilePowerpoint,
+  faFileExcel,
+  faSpider,
+  faCode,
+} from "@fortawesome/free-solid-svg-icons";
 
 const ExperiencePage = () => {
   return (
     <>
-      <br/>
-      <br/>
-
-      <div className="container mx-auto p-10">
-        <motion.h2 
-          className="text-3xl text-dragon-gold font-bold mb-5" 
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          Programming Languages & Frameworks
-        </motion.h2>
-        <div className="space-y-8">
-          {/** Python */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-800 via-purple-800 to-black text-futuristic-gold">
+        <div className="container mx-auto p-10">
+          {/* Programming Languages & Frameworks */}
+          <motion.h2 
+            className="text-3xl text-dragon-gold font-bold mb-5 text-left md:text-center"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-bold">Python</h3>
-            <p>Python is a high-level, interpreted, and general-purpose programming language known for its simplicity and readability. It is extensively used in web development (Django, Flask), data science (Pandas, NumPy), artificial intelligence (TensorFlow, PyTorch), and automation scripting.</p>
-          </motion.div>
-          {/** JavaScript */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
+            Programming Languages & Frameworks
+          </motion.h2>
+          <div className="space-y-8">
+            {/* Python */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faPython} className="text-5xl text-yellow-400 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">Python</h3>
+                <p>Python is a high-level, interpreted, and general-purpose programming language known for its simplicity and readability. It is extensively used in web development (Django, Flask), data science (Pandas, NumPy), artificial intelligence (TensorFlow, PyTorch), and automation scripting.</p>
+              </div>
+            </motion.div>
+            {/* JavaScript */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faJsSquare} className="text-5xl text-yellow-400 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">JavaScript</h3>
+                <p>JavaScript is a versatile scripting language that powers dynamic and interactive web experiences. It is the foundation of modern web development and is used in conjunction with HTML and CSS to create responsive web pages, interactive user interfaces, and server-side applications (Node.js).</p>
+              </div>
+            </motion.div>
+            {/* HTML */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faHtml5} className="text-5xl text-yellow-400 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">HTML</h3>
+                <p>HTML (Hypertext Markup Language) provides the structure and content of web pages. It defines the elements and their layout, enabling developers to create accessible and well-structured websites. HTML5 introduces new features for multimedia, graphics, and offline web applications.</p>
+              </div>
+            </motion.div>
+            {/* CSS & Tailwind */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faCss3Alt} className="text-5xl text-yellow-400 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">CSS & Tailwind CSS</h3>
+                <p>CSS (Cascading Style Sheets) is responsible for the visual presentation of web pages. It controls the layout, colors, fonts, and overall appearance, ensuring a consistent and appealing user experience across different devices. Tailwind CSS is a utility-first CSS framework for rapid UI development.</p>
+              </div>
+            </motion.div>
+            {/* Django & Flask */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faServer} className="text-5xl text-yellow-400 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">Django & Flask</h3>
+                <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Flask is a micro web framework written in Python. It is lightweight, offering the flexibility to scale as needed for your project.</p>
+              </div>
+            </motion.div>
+            {/* SQL & MySQL */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faDatabase} className="text-5xl text-yellow-400 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">SQL & MySQL</h3>
+                <p>SQL (Structured Query Language) is the standard language for managing relational databases. It allows developers to store, retrieve, and manipulate data efficiently. MySQL is a popular open-source relational database management system known for its reliability, scalability, and performance.</p>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Libraries & Frameworks */}
+          <motion.h2 
+            className="text-3xl text-dragon-gold font-bold mt-12 mb-5 text-left md:text-center"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-2xl font-bold">JavaScript</h3>
-            <p>JavaScript is a versatile scripting language that powers dynamic and interactive web experiences. It is the foundation of modern web development and is used in conjunction with HTML and CSS to create responsive web pages, interactive user interfaces, and server-side applications (Node.js).</p>
-          </motion.div>
-          {/** HTML */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <h3 className="text-2xl font-bold">HTML</h3>
-            <p>HTML (Hypertext Markup Language) provides the structure and content of web pages. It defines the elements and their layout, enabling developers to create accessible and well-structured websites. HTML5 introduces new features for multimedia, graphics, and offline web applications.</p>
-          </motion.div>
-          {/** CSS */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
-            <h3 className="text-2xl font-bold">CSS</h3>
-            <p>CSS (Cascading Style Sheets) is responsible for the visual presentation of web pages. It controls the layout, colors, fonts, and overall appearance, ensuring a consistent and appealing user experience across different devices. CSS frameworks like Bootstrap and Tailwind CSS facilitate rapid development and styling of web applications.</p>
-          </motion.div>
-          {/** SQL & MySQL */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
-          >
-            <h3 className="text-2xl font-bold">SQL & MySQL</h3>
-            <p>SQL (Structured Query Language) is the standard language for managing relational databases. It allows developers to store, retrieve, and manipulate data efficiently. MySQL is a popular open-source relational database management system known for its reliability, scalability, and performance.</p>
-          </motion.div>
-          {/* Add other programming languages and frameworks with animations */}
+            Libraries & Frameworks
+          </motion.h2>
+          <div className="space-y-8">
+            {/* React */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faReact} className="text-5xl text-blue-400 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">React</h3>
+                <p>React is a popular JavaScript library for building user interfaces, particularly single-page applications. It allows developers to create reusable UI components and efficiently manage the state of the application.</p>
+              </div>
+            </motion.div>
+            {/* Bootstrap */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faBootstrap} className="text-5xl text-purple-600 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">Bootstrap</h3>
+                <p>Bootstrap is a powerful front-end framework for developing responsive, mobile-first websites. It includes a collection of CSS and JavaScript components, allowing developers to build visually appealing and consistent user interfaces quickly.</p>
+              </div>
+            </motion.div>
+            {/* Node.js */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faNodeJs} className="text-5xl text-green-400 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">Node.js</h3>
+                <p>Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to build server-side and networking applications. It is known for its non-blocking, event-driven architecture, making it ideal for building scalable applications.</p>
+              </div>
+            </motion.div>
+            {/* Git & GitHub */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faGithub} className="text-5xl text-gray-600 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">Git & GitHub</h3>
+                <p>Git is a distributed version control system that allows developers to track changes in their codebase, collaborate with others, and maintain a history of their project. GitHub is a web-based platform for hosting and managing Git repositories, facilitating code sharing and collaboration.</p>
+              </div>
+            </motion.div>
+            {/* Word, Excel & PowerPoint */}
+            <motion.div 
+              className="bg-purple-800 text-dragon-gold p-8 rounded-lg shadow-lg relative flex flex-col items-center md:flex-row md:items-start"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
+              <div className="flex items-center justify-center mb-4 md:mb-0 md:absolute md:left-0 md:top-1/2 md:-translate-y-1/2">
+                <FontAwesomeIcon icon={faFileAlt} className="text-5xl text-blue-500 p-2" />
+              </div>
+              <div className="md:ml-16 text-left">
+                <h3 className="text-2xl font-bold">Word, Excel & PowerPoint</h3>
+                <p>Microsoft Word, Excel, and PowerPoint are essential productivity tools widely used in the professional world. Word is a word processing tool for creating and editing documents, Excel is a powerful spreadsheet application for data analysis and visualization, and PowerPoint is a presentation software used to create visually engaging slideshows.</p>
+              </div>
+            </motion.div>
+          </div>
         </div>
-
-        <motion.h2 
-          className="text-3xl text-dragon-gold font-bold mt-12 mb-5" 
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Libraries & Frameworks
-        </motion.h2>
-        <div className="space-y-8">
-          {/** React */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <h3 className="text-2xl font-bold">React</h3>
-            <p>React is a JavaScript library for building user interfaces, offering a component-based architecture for creating reusable UI elements. It enables the development of fast and interactive web applications, providing a virtual DOM for efficient rendering and state management through props and state.</p>
-          </motion.div>
-          {/** Django */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <h3 className="text-2xl font-bold">Django</h3>
-            <p>Django is a high-level Python web framework known for its simplicity, scalability, and versatility. It follows the Model-View-Template (MVT) pattern and provides built-in features for authentication, database management, and security, enabling rapid development of complex web applications.</p>
-          </motion.div>
-          {/** Tailwind */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <h3 className="text-2xl font-bold">Tailwind</h3>
-            <p>Tailwind CSS is a utility-first CSS framework that streamlines the process of building custom designs by providing a set of pre-defined utility classes. It promotes a low-level approach to styling, allowing developers to create responsive and visually appealing user interfaces without writing custom CSS.</p>
-          </motion.div>
-          {/** Bootstrap */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
-            <h3 className="text-2xl font-bold">Bootstrap</h3>
-            <p>Bootstrap is a popular CSS framework that simplifies the development of responsive and mobile-first websites. It offers a comprehensive set of pre-designed components, such as buttons, forms, and navigation bars, along with a responsive grid system, making it ideal for rapid prototyping and development.</p>
-          </motion.div>
-          {/* Add other libraries and frameworks with animations */}
-        </div>
-
-        <motion.h2 
-          className="text-3xl text-dragon-gold font-bold mt-12 mb-5" 
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          Other Expertise
-        </motion.h2>
-        <div className="space-y-8">
-          {/** Microsoft Word */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <h3 className="text-2xl font-bold">Microsoft Word</h3>
-            <p>Microsoft Word is a widely used word processing application that allows users to create, edit, and format documents. It offers features such as spell checking, grammar checking, and document templates, making it essential for business, academic, and personal use.</p>
-          </motion.div>
-          {/** Microsoft PowerPoint */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <h3 className="text-2xl font-bold">Microsoft PowerPoint</h3>
-            <p>Microsoft PowerPoint is a presentation program used to create dynamic and engaging slideshows. It provides tools for adding text, images, animations, and multimedia content to slides, allowing users to communicate ideas effectively in meetings, conferences, and educational settings.</p>
-          </motion.div>
-          {/** Microsoft Excel */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <h3 className="text-2xl font-bold">Microsoft Excel</h3>
-            <p>Microsoft Excel is a powerful spreadsheet application used for data analysis, calculation, and visualization. It offers a wide range of functions and tools for managing and manipulating numerical data, making it indispensable for financial analysis, budgeting, and statistical analysis.</p>
-          </motion.div>
-          {/** Web Scraper */}
-          <motion.div 
-            className="bg-dragon-black text-dragon-gold p-8 rounded-lg"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
-            <h3 className="text-2xl font-bold">Web Scraper</h3>
-            <p>Web scraping is the automated process of extracting data from websites. It involves fetching and parsing HTML content to extract relevant information using tools like Beautiful Soup (Python) or Puppeteer (JavaScript). Web scraping is used for various purposes, including market research, data analysis, and content aggregation.</p>
-          </motion.div>
-          {/* Add other expertise with animations */}
-        </div>
-        {/* Add animations for new sections */}
       </div>
     </>
   );
